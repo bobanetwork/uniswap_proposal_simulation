@@ -64,12 +64,12 @@ describe("Gnosis LTD / Uniswap additional use grant simulation", async () => {
     const NODE: string = namehash("v3-core-license-grants.uniswap.eth");
     const KEY: string = "Gnosis LTD Uni v3 Additional Use Grant";
     const VALUE: string = `
-    Gnosis LTD is granted an additional use grant to allow the Gnosis LTD DAO to use the Uniswap V3 Core software code (which is made available to Gnosis LTD subject to license available at https://github.com/Uniswap/v3-core/blob/main/LICENSE (the “Uniswap Code”)).  	
-    As part of this additional use grant, the Gnosis LTD DAO receives a limited worldwide license to use the Uniswap Code for the purposes of:
+    Gnosis LTD is granted an additional use grant to allow the Gnosis LTD to use the Uniswap V3 Core software code (which is made available to Gnosis LTD subject to license available at https://github.com/Uniswap/v3-core/blob/main/LICENSE (the “Uniswap Code”)).  	
+    As part of this additional use grant, the Gnosis LTD receives a limited worldwide license to use the Uniswap Code for the purposes of:
     creating, deploying and making available aspects of an interest rate swap automated market maker (the “IRS AMM”); 
     to modify and update the IRS AMM over time; and 
     deploy the IRS AMM and portions thereof as smart contracts on blockchain-based applications and protocols.  
-    The Gnosis LTD DAO is permitted to use subcontractors to do this work.  
+    The Gnosis LTD is permitted to use subcontractors to do this work.  
     This license is conditional Gnosis LTD complying with the terms of the Business Source License 1.1, made available at https://github.com/Uniswap/v3-core/blob/main/LICENSE.
     `;
     const ensRegistryInterface = new Interface(ENS_REGISTRY_ABI);
