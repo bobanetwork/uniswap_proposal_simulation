@@ -17,7 +17,7 @@ import "hardhat";
 
 const { provider } = waffle;
 
-describe("GnosisDAO / Uniswap additional use grant simulation", async () => {
+describe("Gnosis LTD / Uniswap additional use grant simulation", async () => {
   let wallet: Wallet, other: Wallet;
 
   async function advanceBlockHeight(blocks: number) {
@@ -62,15 +62,15 @@ describe("GnosisDAO / Uniswap additional use grant simulation", async () => {
     const TTL: number = 0;
 
     const NODE: string = namehash("v3-core-license-grants.uniswap.eth");
-    const KEY: string = "GnosisDAO Uni v3 Additional Use Grant";
+    const KEY: string = "Gnosis LTD Uni v3 Additional Use Grant";
     const VALUE: string = `
-    GnosisDAO is granted an additional use grant to allow the GnosisDAO DAO to use the Uniswap V3 Core software code (which is made available to GnosisDAO subject to license available at https://github.com/Uniswap/v3-core/blob/main/LICENSE (the “Uniswap Code”)).  	
-    As part of this additional use grant, the GnosisDAO DAO receives a limited worldwide license to use the Uniswap Code for the purposes of:
+    Gnosis LTD is granted an additional use grant to allow the Gnosis LTD DAO to use the Uniswap V3 Core software code (which is made available to Gnosis LTD subject to license available at https://github.com/Uniswap/v3-core/blob/main/LICENSE (the “Uniswap Code”)).  	
+    As part of this additional use grant, the Gnosis LTD DAO receives a limited worldwide license to use the Uniswap Code for the purposes of:
     creating, deploying and making available aspects of an interest rate swap automated market maker (the “IRS AMM”); 
     to modify and update the IRS AMM over time; and 
     deploy the IRS AMM and portions thereof as smart contracts on blockchain-based applications and protocols.  
-    The GnosisDAO DAO is permitted to use subcontractors to do this work.  
-    This license is conditional GnosisDAO complying with the terms of the Business Source License 1.1, made available at https://github.com/Uniswap/v3-core/blob/main/LICENSE.
+    The Gnosis LTD DAO is permitted to use subcontractors to do this work.  
+    This license is conditional Gnosis LTD complying with the terms of the Business Source License 1.1, made available at https://github.com/Uniswap/v3-core/blob/main/LICENSE.
     `;
     const ensRegistryInterface = new Interface(ENS_REGISTRY_ABI);
     const setSubnodeRecordCalldata = ensRegistryInterface.encodeFunctionData(
@@ -98,7 +98,7 @@ describe("GnosisDAO / Uniswap additional use grant simulation", async () => {
     const values = [0, 0];
     const sigs = ["", ""];
     const calldatas = [setSubnodeRecordCalldata, setTextCalldata];
-    const description = "GnosisDAO Additional Use Grant";
+    const description = "Gnosis LTD Additional Use Grant";
 
     const ensPublicResolver = new Contract(
       PUBLIC_ENS_RESOLVER_ADDRESS,

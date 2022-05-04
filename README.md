@@ -1,6 +1,6 @@
-# Uniswap Additional Use Grant for GnosisDAO Proposal Simulation
+# Uniswap Additional Use Grant for Gnosis LTD Proposal Simulation
 
-This repository runs a simulation of the GnosisDAO's proposal to Uniswap Governance to request the Additional Use Grant. More details on how the grant is practically provided can be found in here https://github.com/Uniswap/deploy-v3 (under the Licensing section). The simulation is executed by running a test scenario in https://github.com/GnosisDAO-Protocol/uniswap_proposal_simulation/blob/main/test/index.ts. 
+This repository runs a simulation of the Gnosis LTD's proposal to Uniswap Governance to request the Additional Use Grant. More details on how the grant is practically provided can be found in here https://github.com/Uniswap/deploy-v3 (under the Licensing section). The simulation is executed by running a test scenario in https://github.com/Gnosis LTD-Protocol/uniswap_proposal_simulation/blob/main/test/index.ts. 
 
 
 # Run the simulation
@@ -9,12 +9,12 @@ In order to run the simulation the following steps need to be taken:
 
 ## Setup
 ```
-git clone https://github.com/GnosisDAO-Protocol/uniswap_proposal_simulation.git
+git clone https://github.com/Gnosis LTD-Protocol/uniswap_proposal_simulation.git
 cd uniswap_proposal_simulation
 npm install
 ```
 
-Additionally, since the simulation is done on top of the Ethereum Mainnet fork, we need to connect with the Alchemy api to get access to their archive node. This is done by updating the network url in https://github.com/GnosisDAO-Protocol/uniswap_proposal_simulation/blob/main/hardhat.config.ts to the one provided by Alchemy.
+Additionally, since the simulation is done on top of the Ethereum Mainnet fork, we need to connect with the Alchemy api to get access to their archive node. This is done by updating the network url in https://github.com/Gnosis LTD-Protocol/uniswap_proposal_simulation/blob/main/hardhat.config.ts to the one provided by Alchemy.
 
 ## Run the Simulation
 ```
