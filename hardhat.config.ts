@@ -27,10 +27,10 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       forking: {
-        url: "https://eth-mainnet.alchemyapi.io/v2/<key>",
-        blockNumber: 14269579
-      }
-    }
+        url: process.env.ALCHEMY_API_URL || "",
+        blockNumber: 14269579,
+      },
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
