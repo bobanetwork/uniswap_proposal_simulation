@@ -18,7 +18,7 @@ import { Console, log } from "console";
 
 const { provider } = waffle;
 
-describe("Gnosis LTD / Uniswap additional use grant simulation", async () => {
+describe("Boba Network / Uniswap additional use grant simulation", async () => {
   let wallet: Wallet, other: Wallet;
 
   async function advanceBlockHeight(blocks: number) {
@@ -63,8 +63,8 @@ describe("Gnosis LTD / Uniswap additional use grant simulation", async () => {
     const TTL: number = 0;
 
     const NODE: string = namehash("v3-core-license-grants.uniswap.eth");
-    const KEY: string = "Gnosis LTD Uni v3 Additional Use Grant";
-    const VALUE = `The GnosisDAO and Gnosis LTD are granted an additional use grant to use the Uniswap V3 Core software code (which is made available to the GnosisDAO and Gnosis LTD subject to license available at https://github.com/Uniswap/v3-core/blob/main/LICENSE (the “Uniswap Code”)). As part of this additional use grant, the GnosisDAO and Gnosis LTD receives license to use the Uniswap Code for the purposes of a full deployment of the Uniswap Protocol v3 onto the Gnosis Chain blockchain. The GnosisDAO and Gnosis LTD are permitted to use subcontractors to do this work.  This license is conditional on the GnosisDAO and Gnosis LTD complying with the terms of the Business Source License 1.1, made available at https://github.com/Uniswap/v3-core/blob/main/LICENSE.`;
+    const KEY: string = "Boba Network Uni v3 Additional Use Grant";
+    const VALUE = `The Boba Network is granted an additional use grant to use the Uniswap V3 Core software code (which is made available to the Boba Network subject to license available at https://github.com/Uniswap/v3-core/blob/main/LICENSE (the “Uniswap Code”)). As part of this additional use grant, the Boba Network receives license to use the Uniswap Code for the purposes of a full deployment of the Uniswap Protocol v3 onto the Boba Network L2 on Ethereum blockchain. The Boba Network are permitted to use subcontractors to do this work.  This license is conditional on the Boba Network complying with the terms of the Business Source License 1.1, made available at https://github.com/Uniswap/v3-core/blob/main/LICENSE.`;
     const ensRegistryInterface = new Interface(ENS_REGISTRY_ABI);
     console.log("--------------------------");
     console.log("NODE_TOP_LEVEL: ", NODE_TOP_LEVEL, "\n");
@@ -113,7 +113,7 @@ describe("Gnosis LTD / Uniswap additional use grant simulation", async () => {
     const values = [0, 0];
     const sigs = ["", ""];
     const calldatas = [setSubnodeRecordCalldata, setTextCalldata];
-    const description = "Gnosis LTD Additional Use Grant";
+    const description = "Boba Network Additional Use Grant";
 
     const ensPublicResolver = new Contract(
       PUBLIC_ENS_RESOLVER_ADDRESS,
